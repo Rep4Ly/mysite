@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цветной фон</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e63946;
+      color: #fff;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 1.4rem;
+      transition: background 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background: #1e6fd9;
+      }
+      .desktop-label { display: none; }
+      .mobile-label  { display: inline; }
+    }
+
+    .mobile-label { display: none; }
+  </style>
+</head>
+</html>
